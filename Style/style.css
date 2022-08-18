@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/*--Header--*/
+
+
+#baner{
+    background:linear-gradient(#2b0d6014,#3b3f3fba), url(../Pictures/pexels-thgusstavo-santana-1813272.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    
+}
+
+.baner-text{
+    text-align: center;
+    color:#fff;
+    padding-top: 180px;
+}
+
+.baner-text h1{
+    font-size: 130px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.baner-text p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.baner-btn{
+    
+    margin: 70px auto;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.baner-btn a{
+    text-align: center;
+    width: 150px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    margin:0 20px;
+    padding: 12px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    z-index: 1;
+    transition: all 0.4s;
+}
+
+.baner-btn a span{
+    width: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.baner-btn a:hover span{
+    width: 100%;
+    
+}
+
+.baner-btn a:hover{
+    color: #000;
+}
+
+#menu{
+    width: 150px;
+    height: 100vh;
+    position: fixed;
+    right: -150px;
+    top: 0;
+    background-color:#324646ec ;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s;
+   
+}
+
+.nav-bar-menu li{
+    list-style: none;
+    margin: 40px auto;
+  
+}
+
+.nav-bar-menu a{
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.4s;
+    padding: 5px;
+}
+
+.nav-bar-menu li a:hover{
+    background-color:#1b0120;
+    border-radius: 5px;
+}
+
+#icon{
+    border-radius: 2px solid;
+}
+
+.fa-solid{
+    color: #fff;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 3;
+    background-color: #3b3f3f;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/*--Features--*/
+
+#features{
+    width: 100%;
+    padding: 70px 0;
+
+}
+
+.title-text{
+   text-align: center;
+   padding-bottom: 70px;
+}
+
+.title-text p{
+    margin: auto;
+    font-size: 20px;
+    color: #1b0120;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+
+.title-text h2{
+    font-size: 50px;
+}
+
+.features-box{
+    width:80% ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin:   auto;
+}
+
+.feature{
+    flex-basis: 50%;
+}
+
+.features-img{
+    width: 100%;
+    flex-basis: 50%;
+    margin: auto;
+}
+
+.features-img img{
+    width: 60%;
+    border-radius: 10px;
+    
+}
+
+.feature h2{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #1b0120;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.feature p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/*Services*/
+
+#services{
+    width: 100%;
+    padding: 70px 0;
+    background-color: #efefef;
+}
+
+.Services-box{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.single-services{
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+}
+
+.single-services img{
+    width: 100%;
+    border-radius: 7px;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 7px;
+    cursor: pointer;
+    background: linear-gradient(rgba(0,0,0,0.5),#1b0120);
+    opacity: 0;
+    transition: 1s;
+}
+
+.single-services:hover .overlay{
+    opacity: 1;
+}
+
+.service-desc{
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.single-services:hover .service-desc{
+    bottom: 50%;
+    opacity: 1;
+}
+hr{
+    background-color: #fff;
+    height: 2px;
+    border: 0;
+    margin: 15px auto;
+    width: 60%;
+}
+
+/*Testimonial*/
+
+#Testimonial{
+    width: 100%;
+    padding: 70px 0;
+
+}
+
+.Testimonial-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.Testimonial-col{
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #00968759;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.Testimonial-col p{
+    font-size: 14px;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;  
+}
+
+.user img{
+    width: 40px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+
+.Testimonial-col:hover{
+    transform: translateY(-10px);
+}
+
+/*Footer*/
+
+#Footer{
+    padding: 100px 20px 0;
+    background-color: #efefef;
+}   
+
+.footer-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-basis: 45px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width:768px) {
+
+    .Testimonial-row{
+       display: flex;
+       flex-direction: column;
+      width: 40%;
+    
+    }
+}
+
+@media (max-width:723px) {
+    .baner-text h1{
+        font-size: 70px;
+        font-family: 'Kaushan Script', cursive;
+    }
+    
+    .logo{
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        
+    }
+
+    .footer-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        flex-basis: 45px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .title-text h2{
+        font-size: 30px;
+    }
+
+    
+    
+
+}
